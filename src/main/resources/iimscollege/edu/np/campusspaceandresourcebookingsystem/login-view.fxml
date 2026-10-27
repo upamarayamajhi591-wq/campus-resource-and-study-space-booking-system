@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<HBox prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iimscollege.edu.np.campusspaceandresourcebookingsystem.LoginController">
+    <VBox alignment="CENTER" prefWidth="350.0" style="-fx-background-color: #000000; -fx-padding: 32;">
+        <Label text="Campus Space" textFill="WHITE"><font><Font name="System Bold" size="24.0" /></font></Label>
+        <Label text="Resource Portal" textFill="#bdbdbd"><font><Font size="16.0" /></font></Label>
+    </VBox>
+    <VBox alignment="CENTER_LEFT" spacing="16.0" style="-fx-background-color: #ffffff; -fx-padding: 40;" HBox.hgrow="ALWAYS">
+        <Label text="Account Login"><font><Font name="System Bold" size="22.0" /></font></Label>
+        <Label fx:id="errorLabel" textFill="#ba1a1a" visible="false" wrapText="true" />
+        <VBox spacing="6.0">
+            <Label text="Username" />
+            <TextField fx:id="usernameInput" prefHeight="40.0" promptText="admin or student1" style="-fx-border-color: #cfc4c5; -fx-background-radius: 0;" />
+        </VBox>
+        <VBox spacing="6.0">
+            <Label text="Password" />
+            <PasswordField fx:id="passwordInput" prefHeight="40.0" promptText="••••••••" style="-fx-border-color: #cfc4c5; -fx-background-radius: 0;" />
+        </VBox>
+        <Button onAction="#handleLogin" prefHeight="44.0" maxWidth="1.7976931348623157E308" style="-fx-background-color: #000000; -fx-text-fill: #ffffff; -fx-font-weight: bold; -fx-background-radius: 0;" text="LOGIN" />
+        <Hyperlink onAction="#handleOpenRegister" text="Need an account? Register here" textFill="#424242" />
+    </VBox>
+</HBox>

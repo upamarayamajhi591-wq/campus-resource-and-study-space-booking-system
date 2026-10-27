@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<VBox spacing="16.0" style="-fx-padding: 24;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iimscollege.edu.np.campusspaceandresourcebookingsystem.MyBookingsController">
+    <Label text="My Bookings"><font><Font name="System Bold" size="20.0" /></font></Label>
+    <TableView fx:id="bookingTable" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="colId" prefWidth="100.0" text="Booking ID" />
+            <TableColumn fx:id="colResId" prefWidth="120.0" text="Resource ID" />
+            <TableColumn fx:id="colDate" prefWidth="120.0" text="Date" />
+            <TableColumn fx:id="colPurpose" prefWidth="250.0" text="Purpose" />
+            <TableColumn fx:id="colStatus" prefWidth="120.0" text="Status" />
+        </columns>
+    </TableView>
+</VBox>

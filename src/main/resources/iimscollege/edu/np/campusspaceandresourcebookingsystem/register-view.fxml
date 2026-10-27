@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="420.0" prefWidth="380.0" spacing="16.0" style="-fx-background-color: #ffffff; -fx-padding: 32;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iimscollege.edu.np.campusspaceandresourcebookingsystem.RegisterController">
+    <Label text="Register Account"><font><Font name="System Bold" size="20.0" /></font></Label>
+    <Label fx:id="errorLabel" textFill="#ba1a1a" visible="false" />
+    <VBox spacing="6.0" maxWidth="1.7976931348623157E308">
+        <Label text="Username" />
+        <TextField fx:id="usernameInput" prefHeight="40.0" style="-fx-border-color: #cfc4c5; -fx-background-radius: 0;" />
+    </VBox>
+    <VBox spacing="6.0" maxWidth="1.7976931348623157E308">
+        <Label text="Password" />
+        <PasswordField fx:id="passwordInput" prefHeight="40.0" style="-fx-border-color: #cfc4c5; -fx-background-radius: 0;" />
+    </VBox>
+    <VBox spacing="6.0" maxWidth="1.7976931348623157E308">
+        <Label text="Role" />
+        <ComboBox fx:id="roleSelector" maxWidth="1.7976931348623157E308" prefHeight="40.0" style="-fx-border-color: #cfc4c5; -fx-background-radius: 0;" />
+    </VBox>
+    <Button onAction="#handleRegister" prefHeight="44.0" maxWidth="1.7976931348623157E308" style="-fx-background-color: #000000; -fx-text-fill: #ffffff; -fx-font-weight: bold; -fx-background-radius: 0;" text="REGISTER" />
+</VBox>

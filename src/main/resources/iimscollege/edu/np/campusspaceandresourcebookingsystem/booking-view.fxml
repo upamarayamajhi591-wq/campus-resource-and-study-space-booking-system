@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="380.0" prefWidth="400.0" spacing="16.0" style="-fx-padding: 24; -fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iimscollege.edu.np.campusspaceandresourcebookingsystem.BookingController">
+    <Label text="Confirm Booking Request"><font><Font name="System Bold" size="18.0" /></font></Label>
+    <VBox spacing="6.0">
+        <Label text="Resource ID" />
+        <TextField fx:id="resourceIdInput" editable="false" style="-fx-background-color: #f4f4f4;" />
+    </VBox>
+    <VBox spacing="6.0">
+        <Label text="Booking Date (YYYY-MM-DD)" />
+        <TextField fx:id="dateInput" promptText="2026-04-01" />
+    </VBox>
+    <VBox spacing="6.0">
+        <Label text="Purpose / Event Detail" />
+        <TextArea fx:id="purposeInput" prefHeight="80.0" />
+    </VBox>
+    <Button onAction="#handleSubmit" prefHeight="40.0" maxWidth="1.7976931348623157E308" style="-fx-background-color: #000; -fx-text-fill: #fff; -fx-font-weight: bold;" text="SUBMIT BOOKING" />
+</VBox>

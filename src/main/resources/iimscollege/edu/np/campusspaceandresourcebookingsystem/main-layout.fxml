@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iimscollege.edu.np.campusspaceandresourcebookingsystem.MainLayoutController">
+    <left>
+        <VBox prefWidth="220.0" spacing="20.0" style="-fx-background-color: #f4f4f4; -fx-padding: 24 16;">
+            <children>
+                <VBox spacing="4.0">
+                    <Label text="Resource Portal"><font><Font name="System Bold" size="18.0" /></font></Label>
+                    <Label fx:id="userLabel" text="User" textFill="#616161" />
+                </VBox>
+                <VBox spacing="8.0">
+                    <Button fx:id="btnResources" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" onAction="#showResources" prefHeight="38.0" style="-fx-background-color: #eaeaea; -fx-font-weight: bold;" text="⊞ Available Resources" />
+                    <Button fx:id="btnMyBookings" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" onAction="#showMyBookings" prefHeight="38.0" style="-fx-background-color: transparent;" text="📅 My Bookings" />
+                    <Button fx:id="btnAdmin" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" onAction="#showAdmin" prefHeight="38.0" style="-fx-background-color: transparent;" text="⚙ Admin Panel" />
+                </VBox>
+                <Region VBox.vgrow="ALWAYS" />
+                <Button onAction="#handleLogout" prefHeight="38.0" maxWidth="1.7976931348623157E308" style="-fx-background-color: #000000; -fx-text-fill: #ffffff; -fx-font-weight: bold;" text="LOGOUT" />
+            </children>
+        </VBox>
+    </left>
+    <center>
+        <StackPane fx:id="contentArea" style="-fx-background-color: #f9f9f9;" />
+    </center>
+</BorderPane>
